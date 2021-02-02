@@ -1,0 +1,198 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+    font-family: "Leleypot";
+}
+
+body {
+	display: flex;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 5%;
+	background: linear-gradient(-45deg, rgba(104, 128, 236, 0.81), rgba(133, 119, 255, 0.73), rgba(119, 202, 255, 0.77) );
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+nav ul {
+	list-style: none;
+	text-align: right;
+	position: relative;
+	padding-right: 2em;
+	margin-right: 2em;
+	min-height: 10rem;
+	display: flex;
+	flex-direction: column;
+}
+
+nav ul::after {
+    content: "";
+    height: 100%;
+    background-color: #ffffff;
+    width: 5px;
+    position: absolute;
+    right: 0;
+    top: 5%;
+}
+
+p a {
+  color: #ffb4f1;
+  transition: font-size 1s, color 5s, transform 1s;
+  transition-timing-function: ease-out;
+  text-decoration: none;
+  display:inline-block
+}
+
+p a:hover {
+  font-size: 300%;
+  color: rgb(235, 36, 179);
+  transform: rotate(7200deg);
+  text-transform: uppercase;
+}
+
+nav ul li.nav-spacing {
+    flex-grow: 10;
+}
+
+nav ul li a {
+    white-space: nowrap;
+    vertical-align: middle;
+    text-decoration: none;
+		margin: 5px;
+}
+
+nav ul li.active a,
+nav ul li a:hover {
+    text-decoration: underline;
+		text-decoration-style: wavy;
+		text-decoration-color: #f16fb1;
+}
+
+.hearticon {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75px;
+	height: 75px;
+	margin-bottom: 25px;
+}
+
+.github-icon,
+.twitter-icon {
+    width: 30px;
+    height: 30px;
+		margin-bottom: 2px
+}
+
+
+
+
+h1 {
+  font-size: 100px;
+  font-family: Leleypot;
+  src: (D:\Docs\Leleypot-Regular.otf);
+  color: white;
+  animation: gradient 10s ease infinite;
+}
+
+p {
+  color: rgb(59, 61, 65);
+  font-size: 50px;
+  font-family: Leleypot;
+  src: (D:\Docs\Leleypot-Regular.otf);
+	text-align: justify;
+}
+
+.button1 {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   height: 20px;
+   line-height: 20px;
+   color: #9461d5;
+   font-family: Leleypot;
+   width: 365px;
+   font-size: 50px;
+   font-weight: 100;
+   padding: 18px;
+	 padding-bottom: 25px;
+   background-color: rgba(255, 255, 255, 0.67);
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+	 transition: 1s;
+
+}
+
+.button1:hover {
+   background: #9277ff;
+   border: solid #337FED 0;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   text-decoration: none;
+	 color: white;
+}
+
+.button1:active {
+  background-color: #553e8e;
+  box-shadow: 0 5px #666;
+  transform: translateY(1000px);
+}
+
+
+
+/* responsive block */
+@media (max-width: 960px) {
+    body {
+        display: block;
+        padding: 5%;
+        font-size: 14pt;
+    }
+
+    nav ul {
+        margin-right: 0;
+        padding-right: 0;
+        padding-bottom: 0.5em;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    nav ul li {
+        min-width: 30%;
+        margin: 1%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    nav ul::after {
+        width: 80%;
+        height: 1px;
+        bottom: 0%;
+        top: revert;
+        right: 10%;
+    }
+}
+
+
+
+/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/anime/ani-12/ani1136.ani), url(https://cur.cursors-4u.net/anime/ani-12/ani1136.gif), auto !important;} /* End https://www.cursors-4u.com */
