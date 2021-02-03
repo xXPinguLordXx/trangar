@@ -48,12 +48,27 @@ nav ul::after {
     top: 5%;
 }
 
+h3 a {
+  color: rgb(38, 235, 247);
+  text-decoration-style: wavy;
+  font-size: 65px;
+  transition: font-size 1s, color 1s, transform 1s;
+  transition-timing-function: ease-in-out;
+}
+
+h3 a:hover {
+  color: rgb(80, 252, 206);
+  text-decoration-style: solid;
+  font-size: 200%;
+  text-transform: uppercase;
+}
+
 p a {
   color: #ffb4f1;
   transition: font-size 1s, color 5s, transform 1s;
   transition-timing-function: ease-out;
   text-decoration: none;
-  display:inline-block
+  display:inline-block;
 }
 
 p a:hover {
@@ -154,7 +169,75 @@ p {
   transform: translateY(1000px);
 }
 
+small {
+    font-size: 60%;
+    font-weight: 100;
+    vertical-align: top;
+}
 
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  /* rtl:remove */
+  letter-spacing: -.05rem;
+}
+
+
+/* .TextWrapRight {
+  float: right;
+  clear: left;
+  margin: 10px;
+  width: 200px;
+}
+
+.TextWrapLeft {
+  float: left;
+  clear: right;
+  margin: 10px;
+  width: 200px;
+}
+
+.portfolio-entry {
+    display: flex;
+} */
+
+/* .portfolio-entry > .image {
+    flex: 0 0 10em;
+    display: flex;
+}
+
+.portfolio-entry:nth-of-type(even) > .image {
+    order: 1;
+}
+
+.portfolio-entry > .image > img {
+    width: 100%;
+    align-self: center;
+    display: inline-block;
+} */
+/*
+.portfolio-entry > .body {
+    margin: 1em;
+
+}
+
+.portfolio-entry > .body img {
+    height: 16pt;
+    position: relative;
+    top: 5px;
+}
+
+.portfolio-entry:last-of-type {
+    margin-bottom: 1em;
+} */
 
 /* responsive block */
 @media (max-width: 960px) {
