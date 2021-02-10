@@ -176,10 +176,11 @@ p {
 
 /* PORTFOLIO AREA HERE */
 
-.pog-content {
+.omegapogcontent {
   display: flex;
   flex-grow: 0;
-  postion: relative;
+  position: relative;
+  flex-direction: column;
 }
 
 /* responsive block */
