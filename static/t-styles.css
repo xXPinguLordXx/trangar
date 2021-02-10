@@ -176,11 +176,29 @@ p {
 
 /* PORTFOLIO AREA HERE */
 
-.omegapogcontent {
+.pog-content {
   display: flex;
-  flex-grow: 0;
-  position: relative;
-  flex-direction: column;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.pog-content .body{
+  flex-grow: 1;
+  margin-left: 40px;
+}
+.pog-content img{
+  max-width: 200px;
+}
+.socialwrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.socialwrapper .items{
+  display: flex;
+  align-items: center;
+}
+.socialwrapper .items img{
+  width: 100px;
 }
 
 /* responsive block */
